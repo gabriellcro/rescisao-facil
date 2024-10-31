@@ -1,5 +1,5 @@
 // Função que calcula as férias proporcionais com base na opção e no salário
-function calcProportionalLeave(proportionalLeaveOption, pay) {
+export function calcProportionalLeave(proportionalLeaveOption, pay) {
     // Utiliza um switch-case para determinar o cálculo com base na opção selecionada
     switch (proportionalLeaveOption) {
       case "one":
