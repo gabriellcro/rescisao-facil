@@ -1,0 +1,32 @@
+.success-check-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--green-bg-subtle);
+  animation: fadeIn 1s ease-in-out;
+  transition: all 300ms ease;
+}
+
+.success-check-circle svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--success-color);
+}
+
+.calculation-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  width: 100%;
+  max-width: 640px;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius-lg);
+  transition: all 300ms ease-in-out;
+}

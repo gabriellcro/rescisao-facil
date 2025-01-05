@@ -1,0 +1,53 @@
+.alert {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+  border-radius: var(--border-radius-lg);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  animation: slideRight 400ms ease-in-out;
+}
+
+.alert div svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+.alert-info {
+  background-color: var(--cyan-bg-subtle);
+  color: var(--cyan-text-emphasis);
+}
+
+.alert-info div svg {
+  color: var(--info-color);
+}
+
+.alert-success {
+  background-color: var(--green-bg-subtle);
+  color: var(--green-text-emphasis);
+}
+
+.alert-success div svg {
+  color: var(--success-color);
+}
+
+.alert-warning {
+  background-color: var(--yellow-bg-subtle);
+  color: var(--yellow-text-emphasis);
+}
+
+.alert-warning div svg {
+  color: var(--warning-color);
+}
+
+.alert-danger {
+  background-color: var(--red-bg-subtle);
+  color: var(--red-text-emphasis);
+}
+
+.alert-danger div svg {
+  color: var(--danger-color);
+}

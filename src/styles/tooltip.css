@@ -1,0 +1,37 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  position: absolute;
+  content: attr(aria-label);
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  border-radius: var(--border-radius);
+  bottom: 135%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 100ms ease;
+  white-space: nowrap;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 75%;
+  left: 10%;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: var(--black) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 100ms ease;
+}
+
+.tooltip:hover::after,
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

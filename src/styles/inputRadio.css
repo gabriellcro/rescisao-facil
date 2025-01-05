@@ -1,0 +1,95 @@
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  && img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.form-radio {
+  display: flex;
+  transition: all 300ms ease-in-out;
+  position: relative;
+
+  && input {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-pill);
+    position: absolute;
+  }
+
+  && label {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: start;
+    background-color: var(--body-bg);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-xl);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+
+  && input:after {
+    content: "";
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: var(--border-radius-pill);
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+  }
+
+  && input:checked {
+    border-color: var(--body-color);
+  }
+
+  && input:checked::after {
+    background-color: var(--body-color);
+  }
+
+  && input:checked ~ label {
+    border-color: var(--body-color);
+  }
+
+  && p {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+  }
+
+  && svg {
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-bg);
+    color: var(--body-color);
+    width: 3rem;
+    height: auto;
+  }
+}
+
+.form-radio:hover {
+  transform: scale(1.02);
+}
+
+.form-radio:nth-child(1){
+  animation: slideRight 200ms ease-in-out;
+}
+
+.form-radio:nth-child(2){
+  animation: slideRight 400ms ease-in-out;
+}
+
+.form-radio:nth-child(3){
+  animation: slideRight 600ms ease-in-out;
+}
+

@@ -1,0 +1,42 @@
+.text-sm {
+  font-size: 1.25rem;
+}
+
+.text-md {
+  font-size: 2rem;
+}
+
+.text-xl {
+  font-size: 3rem;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+}
+
+.gradient-purple-cyan {
+  background: linear-gradient(45deg, var(--purple) 0%, var(--cyan) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-pink-yellow {
+  background: linear-gradient(45deg, var(--pink) 0%, var(--yellow) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

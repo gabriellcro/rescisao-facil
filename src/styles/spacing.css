@@ -1,0 +1,49 @@
+.space-between {
+  justify-content: space-between;
+}
+.space-1 {
+  gap: 0.25rem;
+}
+.space-2 {
+  gap: 0.5rem;
+}
+
+.space-3 {
+  gap: 0.75rem;
+}
+
+.space-5 {
+  gap: 1.25rem;
+}
+
+.space-8 {
+  gap: 2rem;
+}
+
+.space-10 {
+  gap: 2.5rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}

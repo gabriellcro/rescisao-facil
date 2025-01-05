@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Parkinsans:wght@300..800&display=swap");
+
+:root,
+[data-theme="light"] {
+  --green: #22c55e;
+  --yellow: #eab308;
+  --pink: #ec4899;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --cyan: #06b6d4;
+  --teal: #14b8a6;
+  --purple: #a855f7;
+  --white: #fafafa;
+  --black: #0a0a0a;
+
+  --green-text-emphasis: #14532d;
+  --yellow-text-emphasis: #713f12;
+  --red-text-emphasis: #7f1d1d;
+  --cyan-text-emphasis: #164e63;
+
+  --green-bg-subtle: #dcfce7;
+  --yellow-bg-subtle: #fef9c3;
+  --red-bg-subtle: #fef2f2;
+  --cyan-bg-subtle: #cffafe;
+
+  --font-sans-serif: "Parkinsans", sans-serif;
+
+  --body-color: #171717;
+  --secondary-color: rgba(23, 23, 23, 0.75);
+  --tertiary-color: rgba(23, 23, 23, 0.75);
+
+  --body-bg: #fafafa;
+  --secondary-bg: #f5f5f5;
+  --tertiary-bg: #e5e5e5;
+
+  --link-color: #0284c7;
+  --link-decoration: underline;
+  --link-hover-color: #0369a1;
+
+  --focus-ring-color: #60a5fa;
+  --btn-focus-ring-color: #a3a3a3;
+
+  --hover: #60a5fa;
+
+  --border-color: #d4d4d4;
+  --border-radius-sm: 0.375rem;
+  --border-radius: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-pill: 50rem;
+
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+  --success-color: var(--green);
+  --warning-color: var(--yellow);
+  --danger-color: var(--red);
+  --info-color: var(--cyan);
+
+  --form-invalid-color: var(--red);
+}
+/* Tema Escuro */
+[data-theme="dark"] {
+  --body-color: #fafafa;
+  --secondary-color: rgba(250, 250, 250, 0.75);
+  --tertiary-color: rgba(250, 250, 250, 0.5);
+
+  --body-bg: #171717;
+  --secondary-bg: #262626;
+  --tertiary-bg: #404040;
+
+  --green-text-emphasis: #f0fdf4;
+  --yellow-text-emphasis: #fefce8;
+  --red-text-emphasis: #fef2f2;
+  --cyan-text-emphasis: #a5f3fc;
+
+  --green-bg-subtle: #052e16;
+  --yellow-bg-subtle: #422006;
+  --red-bg-subtle: #450a0a;
+  --cyan-bg-subtle: #083344;
+
+  --link-color: #60a5fa;
+  --link-hover-color: #93c5fd;
+  --border-color: #525252;
+
+  --focus-ring-color: #93c5fd;
+  --btn-focus-ring-color: #d4d4d4;
+
+  --success-color: #86efac;
+  --warning-color: #fde047;
+  --danger-color: #fca5a5;
+  --info-color: #67e8f9;
+
+  --form-invalid-color: #fca5a5;
+}
+
+/* Reset de Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Estilos Globais */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  height: 100dvh;
+  margin: 0 auto;
+  align-items: center;
+  font-family: var(--font-sans-serif);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+

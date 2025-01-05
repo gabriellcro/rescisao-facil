@@ -1,0 +1,3 @@
+.blur {
+  backdrop-filter: saturate(100%) blur(5px);
+}

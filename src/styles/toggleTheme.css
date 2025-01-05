@@ -1,0 +1,24 @@
+.toggle-theme label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease-in-out;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.toggle-theme svg {
+  width: 1.25rem;
+  height: auto;
+  color: var(--secondary-color);
+}
+
+.toggle-theme label:hover {
+  background-color: var(--secondary-bg);
+  color: var(body-color);
+}
+
+.toggle-theme input {
+  display: none;
+}

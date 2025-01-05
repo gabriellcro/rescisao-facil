@@ -1,0 +1,19 @@
+.step {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: start;
+  gap: 3rem;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl);
+  background-color: var(--body-bg);
+  box-shadow: var(--box-shadow-sm);
+  width: 640px;
+  transition: all 200ms ease;
+  margin-top: 1rem;
+}
+
+.step-active {
+  display: flex !important;
+}

@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .text-xl {
+    font-size: 2rem;
+  }
+
+  .text-sm,
+  .btn-pill {
+    font-size: 1rem;
+  }
+
+  .text-md {
+    font-size: 1.5rem;
+  }
+
+  .radio-group {
+    flex-direction: column;
+
+    && p {
+      font-size: 0.75rem;
+    }
+  }
+
+  .main {
+    margin-top: 5rem;
+    justify-content: start;
+  }
+
+  .step {
+    width: 100%;
+  }
+}

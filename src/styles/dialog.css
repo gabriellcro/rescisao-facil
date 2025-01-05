@@ -1,0 +1,77 @@
+dialog {
+  border: none;
+  border-radius: var(--border-radius-xl);
+  padding: 2rem;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  margin: auto;
+  animation: slideUp 300ms ease-in-out;
+  position: relative;
+  text-align: start;
+}
+
+dialog:focus {
+  outline: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.dialog-header {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.dialog-container,
+.dialog-body,
+.dialog-body section {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-container,
+.dialog-body {
+  gap: 2rem;
+}
+
+.dialog-body section {
+  gap: 1.25rem;
+}
+
+.dialog-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dialog-body ul li {
+  margin-left: 1.25rem;
+}
+
+.dialog-body p,
+.dialog-body li {
+  color: var(--secondary-color);
+}
+
+.dialog-body strong {
+  color: var(--body-color);
+}
+
+.dialog-warning {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--yellow-bg-subtle);
+}
+
+.dialog-warning svg {
+  width: 2rem;
+  height: auto;
+  color: var(--warning-color);
+}
