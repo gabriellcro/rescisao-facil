@@ -1,20 +1,7 @@
 # Node modules
 node_modules/
 
-# Build output
-/public/assets/js/
-/public/assets/css/
+# # Build output
+# /public/assets/js/
+# /public/assets/css/
 
-# Logs
-*.log
-npm-debug.log*
-
-# Environment variables
-.env
-
-# Vercel build
-.vercel/
-
-# OS files
-.DS_Store
-Thumbs.db

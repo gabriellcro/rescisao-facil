@@ -1,6 +1,7 @@
 import createTerminationReasonSection from "./template/terminationReasonSection";
 import createHeaderElement from "./template/headerElement";
 import createMainElement from "./template/mainElement";
+import activeButtonCreateForm from "./template/activeButtonCreateForm";
 
 import root from "./styles/root.css";
 import typography from "./styles/typography.css";
@@ -22,9 +23,8 @@ import tooltip from "./styles/tooltip.css";
 import animation from "./styles/animation.css";
 import result from "./styles/result.css";
 import mediaScreen from "./styles/mediaScreen.css";
-import activeButtonCreateForm from "./template/activeButtonCreateForm";
 
-const bodyElement = document.querySelector("body");
+const app = document.querySelector("#app");
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeHomePage();
@@ -35,7 +35,7 @@ function initializeHomePage() {
   const headerElement = createHeaderElement();
   const mainElement = createMainElement();
 
-  bodyElement.append(headerElement, mainElement);
+  app.append(headerElement, mainElement);
 }
 
 function initializeApp() {
