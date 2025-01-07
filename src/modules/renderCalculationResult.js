@@ -1,5 +1,8 @@
 import { createAlert } from "../components/ui/alert";
-import { createAlertDialog, showAlertDialog } from "../components/ui/alertDialog";
+import {
+  createAlertDialog,
+  showAlertDialog,
+} from "../components/ui/alertDialog";
 import createButton from "../components/ui/button";
 import createCustomElement from "../components/utils/container";
 import createCustomText from "../components/utils/text";
@@ -225,20 +228,22 @@ function createButtonGroup(element) {
     "container-sm"
   );
 
+  const buttonDownloadScreenshotText = `${icons.arrowDownTray} Download do resultado`;
   const buttonDownloadScreenshot = createButton(
-    "Capturar tela",
+    buttonDownloadScreenshotText,
     false,
     "btn",
-    "btn-outline",
+    "btn-primary",
     "animate-fade-in",
     "w-100"
   );
 
+  const buttonResetText = `${icons.arrowPath} Resetar`;
   const buttonReset = createButton(
-    "Reiniciar",
+    buttonResetText,
     false,
     "btn",
-    "btn-prymary",
+    "btn-outline",
     "animate-fade-in",
     "w-100"
   );
@@ -257,7 +262,7 @@ function createButtonGroup(element) {
     showAlertDialog(alertDialog);
   });
 
-  buttonGroup.append(buttonDownloadScreenshot, buttonReset);
+  buttonGroup.append(buttonReset, buttonDownloadScreenshot);
   return buttonGroup;
 }
 

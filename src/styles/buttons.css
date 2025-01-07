@@ -8,7 +8,7 @@
 }
 
 .btn,
-.btn-link,          
+.btn-link,
 .btn-close,
 .btn-pill {
   cursor: pointer;
@@ -65,8 +65,17 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   border-radius: var(--border-radius-lg);
   padding: 0.75rem 1rem;
+}
+
+.btn svg {
+  width: 1rem;
+  height: auto;
 }
 
 .btn-ghost,
