@@ -1,13 +1,6 @@
 # Node modules
 node_modules/
 
-<<<<<<< HEAD
-# # Build output
-# /public/assets/js/
-# /public/assets/css/
-
-=======
 # Build output
-# /public/assets/js/
-# /public/assets/css/
->>>>>>> a08f0d4 (chore: update styles and create id app for html)
+/public/assets/js/
+/public/assets/css/
