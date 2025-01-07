@@ -1,10 +1,4 @@
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/root.css ***!
-  \***********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Parkinsans:wght@300..800&display=swap);
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/root.css (1) ***!
-  \***************************************************************************/
 :root,
 [data-theme="light"] {
   --green: #22c55e;
@@ -123,9 +117,6 @@ body {
 }
 
 
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
-  \*****************************************************************************/
 .text-sm {
   font-size: 1.25rem;
 }
@@ -169,9 +160,6 @@ body {
   color: transparent;
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/toggleTheme.css ***!
-  \******************************************************************************/
 .toggle-theme label {
   display: flex;
   align-items: center;
@@ -197,9 +185,6 @@ body {
   display: none;
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/flexbox.css ***!
-  \**************************************************************************/
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -230,9 +215,6 @@ body {
   justify-content: start;
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/spacing.css ***!
-  \**************************************************************************/
 .space-between {
   justify-content: space-between;
 }
@@ -283,9 +265,6 @@ body {
   margin-top: 2.5rem;
 }
 
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/layout.css ***!
-  \*************************************************************************/
 .container-fluid {
   width: 100%;
 }
@@ -343,16 +322,10 @@ body {
   padding: 1.25rem;
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/filters.css ***!
-  \**************************************************************************/
 .blur {
   backdrop-filter: saturate(100%) blur(5px);
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/buttons.css ***!
-  \**************************************************************************/
 .btn-group {
   display: flex;
   justify-content: flex-end;
@@ -501,9 +474,6 @@ body {
   outline: 2px solid var(--btn-focus-ring-color);
 }
 
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/inputRadio.css ***!
-  \*****************************************************************************/
 .radio-group {
   display: flex;
   flex-direction: row;
@@ -600,9 +570,6 @@ body {
 }
 
 
-/*!***********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/inputRadioSimple.css ***!
-  \***********************************************************************************/
 .radio-label-simple {
   display: flex;
   align-items: center;
@@ -664,9 +631,6 @@ body {
 }
 
 
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/step.css ***!
-  \***********************************************************************/
 .step {
   display: none;
   flex-direction: column;
@@ -687,9 +651,6 @@ body {
   display: flex !important;
 }
 
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/form.css ***!
-  \***********************************************************************/
 .form-group {
   display: flex;
   flex-direction: column;
@@ -749,9 +710,6 @@ body {
   outline: 1px solid var(--form-invalid-color) !important;
 }
 
-/*!*******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/progressBars.css ***!
-  \*******************************************************************************/
 .progress-bar {
   display: flex;
   align-items: center;
@@ -838,9 +796,6 @@ body {
   z-index: -2;
 }
 
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/dialog.css ***!
-  \*************************************************************************/
 dialog {
   border: none;
   border-radius: var(--border-radius-xl);
@@ -919,9 +874,6 @@ dialog::backdrop {
   color: var(--warning-color);
 }
 
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/dropdown.css ***!
-  \***************************************************************************/
 .dropdown-toggle-container {
   position: relative;
   animation: fadeIn 300ms ease;
@@ -1036,9 +988,6 @@ dialog::backdrop {
   content: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke-width=%273%27 stroke=%27%23fafafafa%27 class=%27size-6%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 d=%27m4.5 12.75 6 6 9-13.5%27/%3E%3C/svg%3E");
 }
 
-/*!************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/alert.css ***!
-  \************************************************************************/
 .alert {
   display: flex;
   align-items: center;
@@ -1093,9 +1042,6 @@ dialog::backdrop {
   color: var(--danger-color);
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tooltip.css ***!
-  \**************************************************************************/
 .tooltip {
   position: relative;
 }
@@ -1134,9 +1080,6 @@ dialog::backdrop {
   visibility: visible;
 }
 
-/*!****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/animation.css ***!
-  \****************************************************************************/
 .animate-slide-right-200 {
   animation: slideRight 200ms ease-in-out;
 }
@@ -1229,9 +1172,6 @@ dialog::backdrop {
   }
 }
 
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/result.css ***!
-  \*************************************************************************/
 .success-check-circle {
   display: flex;
   align-items: center;
@@ -1265,9 +1205,6 @@ dialog::backdrop {
   transition: all 300ms ease-in-out;
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/mediaScreen.css ***!
-  \******************************************************************************/
 @media (max-width: 768px) {
   .text-xl {
     font-size: 2rem;
