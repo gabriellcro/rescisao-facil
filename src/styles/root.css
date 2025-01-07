@@ -110,7 +110,7 @@ body {
   width: 100%;
   max-width: 1920px;
   height: 100dvh;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
   font-family: var(--font-sans-serif);
   color: var(--body-color);

@@ -25,7 +25,12 @@ const formValidator = new FormValidator();
 let selectedRadio;
 
 export default function createTerminationReasonSection() {
-  const container = createCustomElement("section", "flex-col", "space-10");
+  const container = createCustomElement(
+    "section",
+    "flex-col",
+    "space-10",
+    "pb-8"
+  );
   const header = createCustomElement("header", "flex-col", "space-3");
   const sectionTitle = createCustomText("h2", "Motivo da Rescisão", "text-md");
   const sectionDescription = createCustomText(

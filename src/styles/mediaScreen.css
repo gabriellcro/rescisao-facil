@@ -14,6 +14,7 @@
 
   .radio-group {
     flex-direction: column;
+    gap: 1.25rem;
 
     && p {
       font-size: 0.75rem;
