@@ -22,8 +22,7 @@
   justify-content: start;
   text-align: start;
   width: 100%;
-  max-width: 640px;
-  gap: 1.25rem;
+  gap: 1rem;
   padding: 2rem;
   background-color: var(--secondary-bg);
   border-radius: var(--border-radius-lg);

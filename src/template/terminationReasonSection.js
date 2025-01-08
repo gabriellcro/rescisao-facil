@@ -110,7 +110,8 @@ function setupButtonStartedEvent() {
       "section",
       "container-fluid",
       "space-10",
-      "flex-col"
+      "flex-col",
+      "align-items-center"
     );
     const formElement = formFlow(selectedRadio.value);
 

@@ -106,10 +106,13 @@
 /* Estilos Globais */
 body {
   display: flex;
+  align-items: center;
+  justify-content: start;
   flex-direction: column;
   width: 100%;
   max-width: 1920px;
   height: 100dvh;
+  margin: auto;
   font-family: var(--font-sans-serif);
   color: var(--body-color);
   background-color: var(--body-bg);
@@ -121,6 +124,8 @@ main {
   gap: 2rem;
   align-items: center;
   justify-content: start;
+  width: 100%;
+  max-width: 1024px;
   margin-top: 20rem;
   text-align: center;
   padding: 1.25rem;
