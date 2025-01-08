@@ -296,7 +296,7 @@ function displayUnemploymentBenefitInfo(container, salaryInput) {
     unemploymentBenefitValue > 1 ? "parcelas" : "parcela";
 
   // const
-  const alertTextContent = `Você receberá um total de <strong>${installmentCountValue} ${installmentLabel}</strong> do seguro-desemprego, cada uma no valor de <strong>${unemploymentBenefitValueFormatted}</strong>`;
+  const alertTextContent = `Você receberá um total de <strong>${installmentCountValue} ${installmentLabel}</strong> do seguro desemprego, cada uma no valor de <strong>${unemploymentBenefitValueFormatted}</strong>`;
 
   const alertElement = createAlert(
     icons.informationCircle,
