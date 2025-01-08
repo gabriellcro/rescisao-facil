@@ -44,7 +44,14 @@ export function createAlertDialog(
   const btnCancel = createButton("Cancelar", false, "btn", "btn-outline");
   const btnConfirm = createButton("Confirmar", false, "btn", "btn-primary");
 
-  const buttonGroup = createCustomElement("div", "btn-group");
+  const buttonGroup = createCustomElement(
+    "div",
+    "flex-row",
+    "container-fluid",
+    "align-items-center",
+    "justify-content-end",
+    "space-5"
+  );
 
   dialog.appendChild(dialogContainer);
   dialogBody.append(dialogIconElement, dialogTextContent);

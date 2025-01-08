@@ -6,12 +6,11 @@
   gap: 3rem;
   padding: 2rem;
   border: 1px solid var(--border-color);
-  background-color: var(--body-bg);
+  background-color: var(--secondary-bg);
   border-radius: var(--border-radius-xl);
   box-shadow: var(--box-shadow);
   width: 640px;
   transition: all 200ms ease;
-  margin-top: 1rem;
 }
 
 .step-active {

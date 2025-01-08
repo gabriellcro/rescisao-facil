@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+[data-theme="dark"] .radio-label-simple {
+  background-color: var(--tertiary-bg);
+}
+
 .radio-label-simple:has(.radio-input-simple:checked) {
   border-color: var(--body-color);
   color: var(--body-color);
@@ -57,4 +61,3 @@
 .radio-input-simple:checked::after {
   opacity: 1;
 }
-

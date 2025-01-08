@@ -34,7 +34,7 @@ export default function createWithdrawalMethodSection() {
 
   buttonOpenDialog.setAttribute(
     "aria-label",
-    "Clique aqui para saber mais sobre as modalidades de saque rescisão"
+    "Clique aqui e saiba mais sobre modalidade de saque"
   );
 
   const dialogElement = createDialog(withdrawalMethodInfo);
@@ -81,7 +81,11 @@ export default function createWithdrawalMethodSection() {
     "btn-next"
   );
 
-  const buttonGroup = createCustomElement("div", "btn-group", "animate-fade-in");
+  const buttonGroup = createCustomElement(
+    "div",
+    "btn-group",
+    "animate-fade-in"
+  );
   buttonGroup.append(buttonPrev, buttonNext);
 
   sectionContainer.append(buttonOpenDialog, dialogElement, sectionDescription);

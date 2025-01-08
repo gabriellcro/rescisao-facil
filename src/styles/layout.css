@@ -42,15 +42,14 @@
   width: 100%;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1024px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100dvh;
-  gap: 1.25rem;
-  padding: 1.25rem;
+.flex-wrap {
+  flex-flow: row wrap;
+}
+
+.flex {
+  flex: 1 1 150px;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }

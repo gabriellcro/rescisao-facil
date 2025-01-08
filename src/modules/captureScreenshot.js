@@ -47,7 +47,7 @@ export default function captureScreenshot() {
     // Cria um link para baixar a imagem gerada
     const link = document.createElement("a");
     link.href = img;
-    link.download = "holerite.png";
+    link.download = "screenshot.png";
     link.click();
 
     // Opcional: remove o canvas do DOM após a captura

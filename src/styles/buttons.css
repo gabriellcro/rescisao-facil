@@ -1,6 +1,6 @@
 .btn-group {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
   width: 100%;
@@ -94,7 +94,7 @@
 
 .btn-outline:hover,
 .btn-outline:focus {
-  background-color: var(--secondary-bg);
+  background-color: var(--tertiary-bg);
 }
 
 .btn-primary {

@@ -4,11 +4,14 @@ import createCustomElement from "../components/utils/container";
 import { icons } from "../icons/icons";
 
 export default function createMainElement() {
-  const container = createCustomElement("main", "main");
+  const container = document.createElement("main");
 
   const titleContainer = createCustomElement(
-    "main",
-    "container-md",
+    "div",
+    "container-lg",
+    "flex-col",
+    "p-5",
+    "space-5",
     "text-center"
   );
   const titleTextContent = `Simule sua Rescisão Contratual de forma <span class="gradient-pink-yellow">simples</span> e <span class="gradient-purple-cyan">prática</span>`;
@@ -35,13 +38,12 @@ export default function createMainElement() {
     false,
     "btn-pill",
     "btn-primary",
-    "mt-5",
     "btn-started",
     "animate-fade-in"
   );
 
-  titleContainer.append(titleElement);
-  container.append(titleContainer, paragraphElement, buttonStarted);
+  titleContainer.append(titleElement, paragraphElement);
+  container.append(titleContainer, buttonStarted);
 
   return container;
 }

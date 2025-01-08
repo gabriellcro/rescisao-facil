@@ -53,6 +53,11 @@
   animation: fadeIn 1s ease-in-out;
 }
 
+[data-theme="dark"] .dropdown-menu,
+[data-theme="dark"] .dropdown-toggle {
+  background-color: var(--tertiary-bg);
+}
+
 .dropdown-menu li {
   list-style: none;
 }

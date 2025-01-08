@@ -7,20 +7,13 @@ import createProportionalVacationSection from "../template/proportionalVacationS
 import createSalarySection from "../template/salarySection";
 import createWithdrawalMethodSection from "../template/withdrawalMethodSection";
 
-export default function formFlow(selectedRadio) {  
+export default function formFlow(selectedRadio) {
   const fgtsBalanceSection = createFgtsBalanceSection();
   const employmentDateRangeSection = createEmploymentDateRangeSection();
   const expiredVacationSection = createExpiredVacationSection(selectedRadio);
   const proportionalVacationSection = createProportionalVacationSection();
   const salarySection = createSalarySection();
   const withdrawalMethodSection = createWithdrawalMethodSection();
-  let noticeOfTerminationText =
-    "Não, a empresa não cumpriu o aviso prévio corretamente.";
-  let noticeOfTerminationActive = true;
-  const noticeOfTerminationSection = createNoticeOfTerminationSection(
-    noticeOfTerminationText,
-    noticeOfTerminationActive
-  );
 
   if (typeof selectedRadio !== "string" || !selectedRadio) {
     console.error(
@@ -30,20 +23,27 @@ export default function formFlow(selectedRadio) {
   const formElement = createCustomElement("form", "form");
 
   if (selectedRadio === "laid-off") {
+    const noticeOfTerminationSection = createNoticeOfTerminationSection(
+      "Não, a empresa não cumpriu o aviso prévio corretamente.",
+      true
+    );
+
     formElement.append(
       salarySection,
       fgtsBalanceSection,
       withdrawalMethodSection,
-      noticeOfTerminationSection,
       employmentDateRangeSection,
+      noticeOfTerminationSection,
       proportionalVacationSection,
       expiredVacationSection
     );
   } else if (selectedRadio === "fired-for-cause") {
     formElement.append(salarySection, expiredVacationSection);
   } else {
-    noticeOfTerminationText = "Não, não irei cumprir o aviso prévio.";
-    noticeOfTerminationActive = false;
+    const noticeOfTerminationSection = createNoticeOfTerminationSection(
+      "Não, não irei cumprir o aviso prévio.",
+      false
+    );
 
     formElement.append(
       salarySection,

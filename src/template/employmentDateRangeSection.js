@@ -24,10 +24,7 @@ export default function createEmploymentDateRangeSection() {
 
   const formSection = createCustomElement(
     "div",
-    "container-fluid",
-    "flex-row",
-    "flex-wrap",
-    "space-5",
+    "input-date-group",
     "animate-slide-right-500"
   );
 
@@ -45,7 +42,11 @@ export default function createEmploymentDateRangeSection() {
     "btn-primary",
     "btn-next"
   );
-  const buttonGroup = createCustomElement("div", "btn-group", "animate-fade-in");
+  const buttonGroup = createCustomElement(
+    "div",
+    "btn-group",
+    "animate-fade-in"
+  );
 
   formSection.append(inputDateStart, inputDateFinish);
   buttonGroup.append(buttonPrev, buttonNext);

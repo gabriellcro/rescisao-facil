@@ -35,7 +35,7 @@ export default function createSalarySection() {
   );
 
   const buttonReset = createButton(
-    "Reiniciar",
+    "Voltar",
     false,
     "btn",
     "btn-outline",

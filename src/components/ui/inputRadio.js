@@ -13,9 +13,8 @@ export default function createInputRadio(
   const label = document.createElement("label");
   label.htmlFor = radioId;
 
-  const iconElement = document.createElement("div");
-  iconElement.innerHTML = icon;
-  iconElement.className = "badge-secondary";
+  const headerElement = document.createElement("div");
+  headerElement.innerHTML = icon;
 
   const radioInput = document.createElement("input");
   radioInput.type = "radio";
@@ -29,7 +28,8 @@ export default function createInputRadio(
   const labelTextContent = createCustomElement("p");
   labelTextContent.innerHTML = radioLabelTextContent;
 
-  label.append(iconElement, labelTitle, labelTextContent);
+  headerElement.appendChild(labelTitle);
+  label.append(headerElement, labelTextContent);
   radioGroup.append(radioInput, label);
 
   return radioGroup;

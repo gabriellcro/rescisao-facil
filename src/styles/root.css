@@ -18,10 +18,10 @@
   --red-text-emphasis: #7f1d1d;
   --cyan-text-emphasis: #164e63;
 
-  --green-bg-subtle: #dcfce7;
-  --yellow-bg-subtle: #fef9c3;
+  --green-bg-subtle: #f0fdf4;
+  --yellow-bg-subtle: #fefce8;
   --red-bg-subtle: #fef2f2;
-  --cyan-bg-subtle: #cffafe;
+  --cyan-bg-subtle: #ecfeff;
 
   --font-sans-serif: "Parkinsans", sans-serif;
 
@@ -30,19 +30,19 @@
   --tertiary-color: rgba(23, 23, 23, 0.75);
 
   --body-bg: #fafafa;
-  --secondary-bg: #f5f5f5;
-  --tertiary-bg: #e5e5e5;
+  --secondary-bg: #fff;
+  --tertiary-bg: #f5f5f5;
 
+  --link-hover-color: #0afafa;
   --link-color: #0284c7;
   --link-decoration: underline;
-  --link-hover-color: #0369a1;
 
   --focus-ring-color: #60a5fa;
   --btn-focus-ring-color: #a3a3a3;
 
   --hover: #60a5fa;
 
-  --border-color: #d4d4d4;
+  --border-color: #e5e5e5;
   --border-radius-sm: 0.375rem;
   --border-radius: 0.5rem;
   --border-radius-lg: 0.75rem;
@@ -110,10 +110,26 @@ body {
   width: 100%;
   max-width: 1920px;
   height: 100dvh;
-  margin: auto;
-  align-items: center;
   font-family: var(--font-sans-serif);
   color: var(--body-color);
   background-color: var(--body-bg);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20rem;
+  text-align: center;
+  padding: 1.25rem;
+  height: 100dvh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

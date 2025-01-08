@@ -11,7 +11,7 @@
 
 .success-check-circle svg {
   width: 3rem;
-  height: 3rem;
+  height: auto;
   color: var(--success-color);
 }
 
@@ -24,7 +24,6 @@
   width: 100%;
   max-width: 640px;
   gap: 1.25rem;
-  margin-top: 1rem;
   padding: 2rem;
   background-color: var(--secondary-bg);
   border-radius: var(--border-radius-lg);

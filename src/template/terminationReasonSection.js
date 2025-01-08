@@ -29,7 +29,7 @@ export default function createTerminationReasonSection() {
     "section",
     "flex-col",
     "space-10",
-    "pb-8"
+    "pb-5"
   );
   const header = createCustomElement("header", "flex-col", "space-3");
   const sectionTitle = createCustomText("h2", "Motivo da Rescisão", "text-md");
@@ -75,7 +75,7 @@ export default function createTerminationReasonSection() {
     "align-items-center"
   );
 
-  const buttonCreateFlowFormText = `Criar fluxo de formulário ${icons.chevronRight}`;
+  const buttonCreateFlowFormText = `Criar fluxo do formulário ${icons.chevronRight}`;
   const buttonCreateFlowForm = createButton(
     buttonCreateFlowFormText,
     true,
@@ -106,15 +106,22 @@ function setupButtonStartedEvent() {
 
   if (selectedRadio) {
     const mainElement = document.querySelector("main");
+    const container = createCustomElement(
+      "section",
+      "container-fluid",
+      "space-10",
+      "flex-col"
+    );
     const formElement = formFlow(selectedRadio.value);
 
     mainElement.innerHTML = "";
-    mainElement.appendChild(formElement);
+    container.appendChild(formElement);
+    mainElement.appendChild(container);
 
     const steps = document.querySelectorAll(".step");
     const progressBars = createProgressBar(steps);
 
-    mainElement.prepend(progressBars);
+    container.prepend(progressBars);
 
     getMaskMoney();
     setupFormNavigation(selectedRadio.value);

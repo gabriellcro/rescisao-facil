@@ -16,6 +16,15 @@ const severanceCalculator = new SeveranceCalculator();
 export default function renderCalculationResult(selectedRadio) {
   // elements
   const mainElement = document.querySelector("main");
+
+  const containerElement = createCustomElement(
+    "div",
+    "flex-col",
+    "align-items-center",
+    "justify-content-stat",
+    "flex-fluid",
+    "space-5"
+  );
   const successCheckCircle = createCustomElement(
     "span",
     "success-check-circle"
@@ -210,14 +219,14 @@ export default function renderCalculationResult(selectedRadio) {
 
   calculationResultContainer.appendChild(totalElement);
 
-  mainElement.append(
+  containerElement.append(
     successCheckCircle,
     textSuccess,
-    calculationResultContainer,
-    buttonGroup
+    calculationResultContainer
   );
+  mainElement.append(containerElement, buttonGroup);
 
-  addAnimationClassNames(mainElement);
+  addAnimationClassNames(containerElement);
 }
 
 function createButtonGroup(element) {
@@ -238,7 +247,7 @@ function createButtonGroup(element) {
     "w-100"
   );
 
-  const buttonResetText = `${icons.arrowPath} Resetar`;
+  const buttonResetText = `${icons.arrowPath} Reiniciar formulário`;
   const buttonReset = createButton(
     buttonResetText,
     false,
