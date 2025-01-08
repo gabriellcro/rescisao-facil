@@ -81,12 +81,8 @@
     }
   }
 
-  .step,
   .calculation-result-container {
     padding: 1.25rem;
-  }
-
-  .calculation-result-container {
     gap: 0.75rem;
   }
 }
