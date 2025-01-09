@@ -19,7 +19,7 @@ export default function createMainElement() {
   const titleElement = createCustomText(
     "h2",
     titleTextContent,
-    "text-xl",
+    "text-xxl",
     "gradient-primary",
     "animate-slide-right-600"
   );
@@ -27,7 +27,7 @@ export default function createMainElement() {
   const paragraphElement = createCustomText(
     "p",
     "Preencha seus dados e descubra os valores da sua rescisão em poucos cliques. Cada cálculo segue um fluxo de formulário exclusivo para garantir precisão.",
-    "text-sm",
+    "text-md",
     "secondary-color",
     "animate-slide-up"
   );

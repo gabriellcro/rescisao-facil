@@ -11,7 +11,7 @@ import {
 } from "../components/ui/alertDialog";
 
 export default function createSalarySection() {
-  const sectionTitle = createCustomText("h2", "Informe Seu Salário", "text-md");
+  const sectionTitle = createCustomText("h2", "Informe Seu Salário", "text-lg");
 
   const sectionContainer = createCustomElement(
     "div",

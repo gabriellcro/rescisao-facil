@@ -11,7 +11,7 @@ export default function createNoticeOfTerminationSection(
   const sectionTitle = createCustomText(
     "h2",
     "Aviso Prévio: Está Cumprindo?",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
   const sectionDescription = createCustomText(

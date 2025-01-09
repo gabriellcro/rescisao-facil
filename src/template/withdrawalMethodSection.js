@@ -12,7 +12,7 @@ export default function createWithdrawalMethodSection() {
   const sectionTitle = createCustomText(
     "h2",
     "Selecione a Modalidade de Saque",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
   const sectionDescription = createCustomText(

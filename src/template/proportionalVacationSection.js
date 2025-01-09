@@ -13,7 +13,7 @@ export default function createProportionalVacationSection() {
   const sectionTitle = createCustomText(
     "h2",
     "Tem Férias Proporcionais?",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
 

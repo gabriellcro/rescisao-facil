@@ -22,7 +22,7 @@ export default function renderCalculationResult(selectedRadio) {
     "flex-col",
     "align-items-center",
     "justify-content-stat",
-    "flex-fluid",
+    "container-fluid",
     "space-5"
   );
   const successCheckCircle = createCustomElement(
@@ -34,7 +34,8 @@ export default function renderCalculationResult(selectedRadio) {
     "span",
     "Cálculo realizado com sucesso!",
     "animate-fade-in",
-    "secondary-color"
+    "secondary-color",
+    "text-sm"
   );
   const calculationResultContainer = createCustomElement(
     "div",
@@ -43,7 +44,7 @@ export default function renderCalculationResult(selectedRadio) {
   const textContentCalculation = createCustomText(
     "p",
     "Segue abaixo o cálculo realizado com base nas informações fornecidas.",
-    "mb-4",
+    "mb-3",
     "text-sm"
   );
   const buttonGroup = createButtonGroup(mainElement);
@@ -234,7 +235,7 @@ function createButtonGroup(element) {
     "div",
     "flex-col",
     "space-3",
-    "container-sm"
+    "container-fluid"
   );
 
   const buttonDownloadScreenshotText = `${icons.arrowDownTray} Download do resultado`;

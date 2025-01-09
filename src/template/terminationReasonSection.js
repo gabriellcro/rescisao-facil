@@ -32,7 +32,7 @@ export default function createTerminationReasonSection() {
     "pb-5"
   );
   const header = createCustomElement("header", "flex-col", "space-3");
-  const sectionTitle = createCustomText("h2", "Motivo da Rescisão", "text-md");
+  const sectionTitle = createCustomText("h2", "Motivo da Rescisão", "text-lg");
   const sectionDescription = createCustomText(
     "p",
     "Para começar, selecione o motivo da sua rescisão de contrato.",
@@ -109,7 +109,7 @@ function setupButtonStartedEvent() {
     const container = createCustomElement(
       "section",
       "container-fluid",
-      "space-10",
+      "space-8",
       "flex-col",
       "align-items-center"
     );

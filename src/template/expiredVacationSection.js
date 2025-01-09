@@ -16,7 +16,7 @@ export default function createExpiredVacationSection(selectedRadio) {
   const sectionTitle = createCustomText(
     "h2",
     "Tem Férias Vencidas?",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
 

@@ -17,7 +17,7 @@ export default function createDropdown(
     "flex-col",
     "space-5",
     "container-fluid",
-    "mt-5"
+    "mt-4"
   );
 
   const dropdownLabel = createDropdownLabel(dropdownLabelText);

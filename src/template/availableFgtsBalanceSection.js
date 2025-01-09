@@ -9,7 +9,7 @@ export default function createFgtsBalanceSection() {
   const sectionTitle = createCustomText(
     "h2",
     "Consulte o Saldo do seu FGTS",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
 

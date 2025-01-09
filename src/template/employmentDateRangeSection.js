@@ -8,7 +8,7 @@ export default function createEmploymentDateRangeSection() {
   const sectionTitle = createCustomText(
     "h2",
     "Datas de Início e Saída da Empresa",
-    "text-md",
+    "text-lg",
     "animate-slide-right-200"
   );
 
